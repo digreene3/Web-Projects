@@ -1,0 +1,28 @@
+input{
+	border: none;
+	color: white;
+	height: 40px;
+	width: 300px;
+	text-align: center;
+	margin: 5px;
+	background-color: #01d2ff;
+	font-family: sans-serif;
+}
+
+#txtfield{
+	background-color: white;
+	color: #01d2ff;
+}
+form{
+	text-align: center;
+}
+
+body{
+	display: block;
+	background-color:#5f6a7a;
+}
+
+#logo{
+	margin-bottom: 50px;
+	text-align:center;
+}

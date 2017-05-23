@@ -1,0 +1,51 @@
+#logo {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+#logopic {
+	height: 50px;
+	width: auto;
+}
+
+.cards {
+	background-color: #282828;
+	width: 100%;
+	height: 400px;
+	overflow: scroll;
+	overflow-y: hidden;
+	scrollbar-face-color: red;
+	margin-bottom: 100px;
+	vertical-align: top;
+	display: inline-flex;
+	list-style-type: none;
+	margin: 0 auto;
+	position: relative;
+}
+
+body {
+	background-color: #5f6a7a;
+	font-family: Trebuchet MS;
+}
+
+#card {
+	background-color: red;
+	height: 300px;
+	width: 500px;
+	width: 500px;
+	border: none;
+	margin: 50px;
+	border: none;
+	margin: 50px;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+	height: 4px;
+	background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #000000;
+	-webkit-border-radius: 1ex;
+}
