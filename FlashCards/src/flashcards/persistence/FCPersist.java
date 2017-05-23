@@ -19,9 +19,9 @@ public class FCPersist {
 		db.update(con, query);
 	}
 	
-	public void newFlashCard(String topic, String term, String definition){
-		String query = "INSERT INTO flash_card (topicID,term,definition) VALUES ((SELECT id FROM set where topic = '" + topic + "'),'" + term
-				+ "','" + definition + "')";
+	public void newFlashCard(String topic, String term, String definition, int colorID){
+		String query = "INSERT INTO flash_card (topicID,term,definition,color) VALUES ((SELECT id FROM set where topic = '" + topic + "'),'" + term
+				+ "','" + definition + "','" + colorID + "')";
 		db.update(con, query);
 	}
 	
