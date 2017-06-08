@@ -29,7 +29,6 @@ body {
 }
 
 #card {
-	background-color: red;
 	height: 300px;
 	width: 500px;
 	width: 500px;
@@ -37,15 +36,18 @@ body {
 	margin: 50px;
 	border: none;
 	margin: 50px;
+	font-size: 40px;
 }
 
-::-webkit-scrollbar {
-	width: 6px;
-	height: 4px;
-	background: #ffffff;
-}
 
-::-webkit-scrollbar-thumb {
-	background-color: #000000;
-	-webkit-border-radius: 1ex;
+#newCard{
+	background-color:#d3eef2;
+	height: 300px;
+	width: 500px;
+	width: 500px;
+	border: none;
+	margin: 50px;
+	border: none;
+	margin: 50px;
+	font-size: 40px;
 }

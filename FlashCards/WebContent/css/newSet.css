@@ -1,0 +1,105 @@
+input {
+	border: none;
+	color: white;
+	height: 40px;
+	width: 300px;
+	text-align: center;
+	margin: 5px;
+	background-color: #01d2ff;
+	font-family: sans-serif;
+}
+
+#topic {
+	background-color: #d3eef2;
+	height: 300px;
+	width: 500px;
+	width: 500px;
+	border: none;
+	margin: 50px;
+	border: none;
+	margin: 50px;
+	margin-top: 30px;
+	font-size: 40px;
+	color: black;
+}
+
+#txtfield {
+	background-color: white;
+	color: #01d2ff;
+}
+
+form {
+	text-align: center;
+}
+
+body {
+	display: block;
+	background-color: #5f6a7a;
+}
+
+#logo {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+#descrip {
+	width: 450px;
+	background-color: #42f4bf;
+	color: black;
+}
+
+#color {
+	height: 70px;
+	width: 70px;
+	border: none;
+}
+
+#colors {
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.one {
+	color: #f44b42;
+	background-color: #f44b42;
+}
+
+.two {
+	color: #f45c42;
+	background-color: #f45c42;
+}
+
+.three {
+	color: #f4a142;
+	background-color: #f4a142;
+}
+
+.four {
+	color: #fbec82;
+	background-color: #fbec82;
+}
+
+.five {
+	color: #80ff00;
+	background-color: #80ff00;
+}
+
+.six {
+	color: #2fb90d;
+	background-color: #2fb90d;
+}
+
+.seven {
+	color: #1b7bf1;
+	background-color: #1b7bf1;
+}
+
+.eight {
+	color: #1a43b0;
+	background-color: #1a43b0;
+}
+
+.nine {
+	color: #c657ea;
+	background-color: #c657ea;
+}

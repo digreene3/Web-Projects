@@ -1,8 +1,8 @@
 package flashcards.persistence;
 
 import java.sql.Connection;
+import java.sql.ResultSet;
 
-import com.digreene.localdatabaseaccess.DatabaseAccess;
 
 
 public class FCPersist {
@@ -10,12 +10,12 @@ public class FCPersist {
 	private Connection con;
 	
 	public FCPersist(){
-		db = new DatabaseAccess("flash_cards");
+		db = new DatabaseAccess();
 		con = db.connect();
 	}
 	
-	public void newSet(String topic, String username){
-		String query = "";
+	public void newSet(String topic, String username, String color){
+		String query = "INSERT into deck (topic,userID,color) VALUES ('" + topic +"', (SELECT id from user where username = '" + username + "'),'" + color + "' )";
 		db.update(con, query);
 	}
 	
@@ -24,5 +24,12 @@ public class FCPersist {
 				+ "','" + definition + "','" + colorID + "')";
 		db.update(con, query);
 	}
+	
+	public ResultSet getDecks(){
+		String query = "Select * from deck";
+		return db.retrieve(con, query);
+	}
+	
+
 	
 }

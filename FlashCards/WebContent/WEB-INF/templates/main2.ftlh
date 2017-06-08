@@ -10,7 +10,13 @@
 		<img id="logopic" src="img/flashCardsLogo.png">
 	</div>
 	<form method="POST" action="Servlet">
+	
 		<div class="cards">
+		<#list decks as deck>
+			<div class="newCard">
+				<input type="submit" value="${deck.topic}" name="button" id="card" style = "background-color: ${deck.color}">
+			</div>
+		</#list>
 			<div class="newCard">
 				<input type="submit" value="+" name="button" id="newCard">
 			</div>
