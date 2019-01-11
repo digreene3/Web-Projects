@@ -43,7 +43,7 @@ public class Servlet extends HttpServlet {
 
 	/** The user. */
 	private User user;
-	FCLogic fcl = new FCLogic();
+	FCLogic fcl;
 
 	public void init() {
 		cfg = new Configuration(Configuration.VERSION_2_3_25);
@@ -66,6 +66,7 @@ public class Servlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		fcl = new FCLogic();
 		// TODO Auto-generated method stub
 		// response.getWriter().append("Served at:
 		// ").append(request.getContextPath());
@@ -104,6 +105,7 @@ public class Servlet extends HttpServlet {
 
 	private void loadMainPage(HttpServletRequest request, HttpServletResponse response) {
 		HashMap<String, Object> root = new HashMap<String, Object>();
+	
 		ArrayList<Deck> decks = fcl.getDecks();
 
 		root.put("decks", decks);
@@ -151,7 +153,7 @@ public class Servlet extends HttpServlet {
 		root.put("decks", decks);	
 		Template temp = null;
 		try {
-			String templateName = "main2.ftlh";
+			String templateName = "main.ftlh";
 			temp = cfg.getTemplate(templateName);
 			response.setContentType("text/html");
 			Writer out = response.getWriter();
